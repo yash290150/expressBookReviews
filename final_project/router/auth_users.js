@@ -43,9 +43,9 @@ regd_users.post("/login", (req, res) => {
     req.session.authorization = token;
 
     return res.status(200).json({
-        message: "Login successful",
-        token: token
-    });
+    message: "Login successful!",
+    token: token
+});
 });
 
 // Add or modify a book review
